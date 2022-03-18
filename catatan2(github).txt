@@ -22,6 +22,9 @@ open terminal after change in local git. Write
 if need to push new branch, make new branch and write
 > git push remote_repo_name/origin new_remote_branch_name
 
+to force push, use
+> git push -f remote_repo_name remote_branch_name
+
 # pull in github
 pull is combination from fetch and merge to update local repository from change in github repository
 > git pull		  = pull all
