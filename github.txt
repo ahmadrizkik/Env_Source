@@ -1,0 +1,75 @@
+        #######===========#######
+        ###==== Catatan 1 ====###
+        # how to use github
+        #######===========#######
+
+# Clone project into local
+cloning project using terminal in github, copy https address
+and then in terminal open folder destination and write
+> git clone (url address)
+
+
+        #######===========#######
+        ###==== Catatan 2 ====###
+        # push, pull, fetch and merge
+        #######===========#######
+
+# push in github
+push is to upload file from local into repository in github
+open terminal after change in local git. Write
+> git push
+
+if need to push new branch, make new branch and write
+> git push remote_repo_name/origin new_remote_branch_name
+
+to force push, use
+> git push -f remote_repo_name remote_branch_name
+
+# pull in github
+pull is combination from fetch and merge to update local repository from change in github repository
+> git pull		  = pull all
+> git pull remote_repo_   = pull from specific branch
+  name/origin remote_
+  branch_name
+pull from remote branch into local branch
+> git branch -a (check the remote_branch_name)
+> git checkout remote_branch_name
+
+# fetch
+fetch to pull all log remote repository but not merge it
+> git fetch remote_repo_name/origin
+
+# merge
+merge from remote repo to local repo after fetch check log
+> git merge remote_repo_name/master
+or
+> git merge origin/main
+
+
+        #######===========#######
+        ###==== Catatan 3 ====###
+        # merge, remote
+        #######===========#######
+
+if new branch was made in local and need to push to github repo, write
+> git push (repository_name)/origin (new_branch_name)
+
+remote is online repository for collaboration and teamwork
+> git remote -v             = check remote repository
+> git remote add repo_name  = add remote repository
+  /origin repo_url
+> git remote rm repo_name   = delete remote repository
+> git remote rename old_    = rename remote repository
+  repo_name new_repo_name
+
+
+        #######===========#######
+        ###==== Catatan 4 ====###
+        # add local repo into github repo
+        #######===========#######
+
+when create a new repo in github and want to make local repo as part of
+it, write:
+> git remote add remote_repo_name/origin repo_url
+> git branch -M main
+> git push -u remote_repo_name/origin main
