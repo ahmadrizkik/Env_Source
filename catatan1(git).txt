@@ -46,11 +46,10 @@ git can be used in terminal, make cd to folder project, and make "git init"
 
         #######===========#######
         ###==== Catatan 3 ====###
-        # checkout, reset
+        # checkout, reset, rm
         #######===========#######
 
-checkout and reset is to bring older version of code
-
+# checkout and reset is to bring older version of code
 existing file before getting staged and commit
 > git checkout file_name    = delete code
 
@@ -67,6 +66,13 @@ after getting staged and commit
   _code
 > git reset --hard commit_   = delete log, delete code
   code
+
+# rm to removed files in git
+> git rm file_name.extension = delete file
+> git rm --cached file_name. = keep file, delete from tracked git
+  extension
+> git rm -r --cached folder_ = keep folder, delete from tracked git
+  name/
 
 
         #######===========#######
