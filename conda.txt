@@ -12,3 +12,16 @@ Install some package
 
 Create yml list
 >>> conda env export --name (env_name) > yml_list.yml
+
+To run kernels from base environment, install nb_conda_kernels and ipykernel
+>>> conda install --name (env_name) -c conda-forge nb_conda_kernels ipykernel
+    But sometimes it just need to install nb_conda_kernels in main env
+    (base) and just install ipykernel from another env
+    >>> conda install --name (env_name) -c conda-forge ipykernel
+
+Rename env with clone it first then remove old
+>>> conda create --name (new_env_name) --clone (old_env_name)
+>>> conda env remove --name (old_env_name)
+
+Clean residual dependencies from removed environment
+>>> conda clean -tp
