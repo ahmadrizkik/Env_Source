@@ -6,20 +6,28 @@
 git is to control project update
 git can be used in terminal, make cd to folder project, and make "git init"
 
-> git init                  = to make git local repository
-> git config --global       = make global account
-  to make git use the same account with github, insert same username and
-  useremail in github
-  > git config --global user.name "user_name"
-  > git config --global user.email "user_email"
-> git status                = check for status
-  or
-  > git status --short	    = check short status
-> git git_command -help	    = check help
-  or
-  git git_command --help    = open help document
+to make git local repository
+>>> git init
 
-> q   = quit long list in cmd
+make configuration global account
+>>> git config --global
+    To make git use the same account with github, insert same username
+    and useremail in github
+    >>> git config --global user.name "user_name"
+    >>> git config --global user.email "user_email"
+
+check for status
+>>> git status
+    or check short status
+    >>> git status --short
+
+check help
+>>> git git_command -help
+    or open help document
+    >>> git git_command --help
+
+quit long list in cmd
+>>> q
 
 
         #######===========#######
@@ -27,20 +35,30 @@ git can be used in terminal, make cd to folder project, and make "git init"
         # diff, log, stage(add), commit
         #######===========#######
 
-> git diff                  = check for modification
-> git add                   = staged for new file to commit
-  or use this
-  > git add file_name
-    file_name file_name
-  > git add -A		    = staged all file
-  > git add .		    = staged all file
-> git log                   = check for user who make modified
-  > git log --author="user_
-  name"
-  > git log file_name
-> git commit -m "message"   = to make commit for file after being added
-  > git commit -a -m "mess" = commit without stage
-> (git_command) --oneline   = make 'log' in oneline
+check for modification
+>>> git diff
+
+staged for new file to commit
+>>> git add
+    or use this
+    >>> git add file_name file_name file_name
+    staged all file
+    >>> git add -A
+    staged all file
+    >>> git add .
+
+check for user who make modified
+>>> git log
+    >>> git log --author="user_name"
+    >>> git log file_name
+
+to make commit for file after being added
+>>> git commit -m "message"
+    commit without stage
+    >>> git commit -a -m "mess"
+
+make 'log' in oneline
+>>> (git_command) --oneline
 
 
 
